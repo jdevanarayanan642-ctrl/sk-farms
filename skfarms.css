@@ -47,6 +47,11 @@ body{
     
 }
 
+.inner-back-img-buttons{
+    display: flex; 
+    gap: 60px;
+}
+
 .info-div{
     margin-top: -100px;
     display: flex;
@@ -248,13 +253,6 @@ footer{
 
                      /* about page */
 
-.main-header-1{
-    display: flex;
-    margin: 20px;
-    text-align: center;
-    gap: 20px;
-}
-
 .story-div{
     display: flex;
     margin: 0 120px;
@@ -294,6 +292,13 @@ footer{
 
             /* contact us */
 
+.main-header-1{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
 .info-contacts{
     display: flex;
     align-items: center;
@@ -323,6 +328,22 @@ footer{
     margin-left: 40px;
 }
 
+.contact-form-1{
+    width: 200px;
+    height: 35px;
+}
+
+.contact-form-2{
+    width: 412px; 
+    height: 35px;
+    margin-top: 5px;
+}
+
+.contact-form-3{
+    width: 412px;
+    height: 200px;
+    margin-top: 5px;
+}
 
 
            /* our cows */
@@ -339,6 +360,12 @@ footer{
 .cow-back-content{
     margin-left: 80px;
     
+}
+
+.cow-back-content h1{
+    color: white;
+    font-size: 75px; 
+    border-bottom: 4px solid green;
 }
 
 .care-points{
@@ -421,7 +448,7 @@ footer{
 .gallery-images{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     gap: 20px;
     margin: 0 50px;
 
@@ -437,16 +464,22 @@ footer{
 
 @media (max-width: 600px) {
     .main-header{
+        flex-direction: column;
         margin: 10px;
         align-items: center;
     }
+
+
+    .nav-div{
+        flex-direction: column;
+    }
+
 
     .main-header img{
         height: 45px;
     }
 
     .back-img{
-        height: 800px;
         width: 100%;
         margin: 0;
         padding-top: 100px;
@@ -460,12 +493,19 @@ footer{
     }
 
     .inner-back-img {
-        width: auto;
+        background-color:rgba(255,255,255,0.4);
+        width: 100%;
         padding: 5px 15px;
         margin-bottom: 10px;
         
     }
    
+    .inner-back-img-buttons{
+        gap: 20px;
+        
+    }
+
+
     .info-div{
         margin-top: 50px;
         margin-left: 10px;
@@ -556,5 +596,197 @@ footer{
         align-items: center;
     }
 
-    
+    /* about us  */
+
+    .story-div{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+    }
+
+    .story-div img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .promise-div{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+    }
+
+    .why-choose-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .milkimg-div{
+        height: 270px;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* our cows */
+    .cow-back-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .care-points{
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; */
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .last-sec{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .inner-inner-last-sec{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inner-care-points{
+        width: 250px;
+    }
+
+
+    /* products */
+
+    .products-prod{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        row-gap: 20px;
+        column-gap: 10;
+        margin-left: 5px;
+        margin-right: 8px;
+        margin-top: 30px;
+        padding-right: 15px;
+    }
+
+    .inner-products-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 350px; */
+    }
+
+    .inner-products button{
+         margin-top: auto;
+         margin-bottom: 10px;
+         margin-left: 20px;
+         margin-right: 20px;
+    }
+
+    .prod-last-sec-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: rgb(243, 243, 243);
+        
+    }
+
+    /* gallery */
+
+    .container{
+        background-color: rgb(243, 243, 243);
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .gallery-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    .gal-img{
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .gal-main{
+        grid-column: span 2;
+        grid-row: span 2;
+        height: 210px;
+    }
+
+    /* contact */
+
+    .main-header-1{
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .main-header-1 img{
+        height: 45px;
+    }
+
+    .contact-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .inner-contact{
+        border-right: none;
+        padding: 0 80px;
+    }
+
+    .send-msg-div{
+        /* margin-left: 10px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-1{
+        width: 280px;
+        height: 35px;
+    }
+
+    .contact-form-2{
+        width: 280px; 
+        height: 35px;
+        margin-top: 5px;
+    }
+
+    .contact-form-3{
+        width: 280px;
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    .form-media{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
 }
+
