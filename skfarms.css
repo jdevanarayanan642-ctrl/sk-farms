@@ -70,6 +70,10 @@ body{
     
 }
 
+.index-h1{
+    font-size: 50px;
+}
+
 .inner-back-img-buttons{
     display: flex; 
     gap: 60px;
@@ -559,7 +563,7 @@ footer{
     .back-img{
         width: 100%;
         margin: 0;
-        padding-top: 100px;
+        /* padding-top: 100px; */
         padding-left: 15px;
         padding-right: 15px;
         background-size: cover;
@@ -570,11 +574,16 @@ footer{
     }
 
     .inner-back-img {
-        background-color:rgba(255,255,255,0.4);
+        background: none;
+        background-color:rgba(255,255,255,0.2);
         width: 100%;
         padding: 5px 15px;
         margin-bottom: 10px;
         
+    }
+
+    .index-h1{
+        font-size: 40px;
     }
    
     .inner-back-img-buttons{
