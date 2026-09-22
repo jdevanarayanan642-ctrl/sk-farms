@@ -8,28 +8,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
-    <header>
-        <div class="main-header-1">
+    <div class="main-header">
             
             <img src="./images/logoheading.jpeg" alt="" height="90px">
                 
 
-            <div>
+            <div class="inner-navs" id="nav-links">
+
                 <nav>
                     <ul class="nav-div">
                         <li><a href="./index.html" class="nav-a">Home</a></li>
                         <li><a href="./about.html" class="nav-a">About Us</a> </li>
                         <li><a href="./cows.html" class="nav-a"> Our Cows</a></li>
-                        <li><a href="./products.html" class="nav-a" >Products</a> </li>
-                        <li><a href="./gallery.html" class="nav-a" > Gallery</a></li>
-                        <li><a href="./contact.html"  style="border-bottom: 5px solid green; padding-bottom: 5px; color: green; text-decoration: none;">Contact Us</a> </li>
+                        <li><a href="./products.html" class="nav-a">Products</a> </li>
+                        <li><a href="./gallery.html" class="nav-a">Gallery</a></li>
+                        <li style="width: fit-content; border-bottom: 5px solid green; padding-bottom: 5px; color: green;">Contact Us</li>
                     </ul>
                 </nav>
+                
+
+                <!-- <div>
+                    <a class="contact-butn" href="./contact.html"> <span class="material-symbols-outlined">call</span> <p>Order Now</p></a>
+                </div> -->
+
             </div>
 
-            <!-- <div>
-                <a href="register().html" style=" text-decoration: none; border-radius: 10px; border: 2px solid black; color: white; background-color: green; display: flex; align-items: center;padding-left: 20px;padding-right: 20px; gap: 3px;"> <span class="material-symbols-outlined">call</span> <p> Signin</p></a>
-            </div> -->
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </div>
     </header>
 
@@ -109,7 +113,7 @@
         <div class="prod-last-sec-div">
             <div class="prod-inner-last-sec-div">
                 <img src="./images/icona.png" height="70px" style="margin-top: 20px;" alt="">
-                <div>
+                <div class="cont-qual-div">
                     <h2 style="color: green;font-family: Arial, Helvetica, sans-serif;">100% Natural</h2>
                     <p style="font-family: Arial, Helvetica, sans-serif;">Pure and healthy <br> dairy products.</p>
                 </div>
@@ -195,6 +199,14 @@
             <p style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 12px;padding-top: 3px;padding-bottom: 3px;">Ⓒ2025 SK Farms.All Rights Reserved.</p>
         </div>
     </footer>
+
+
+    <script>
+        const toggleMenu = () => {
+            let nav  = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+        } 
+    </script>
 
 </body>
 </html>

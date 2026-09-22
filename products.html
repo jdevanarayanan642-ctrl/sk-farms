@@ -14,22 +14,27 @@
             <img src="./images/logoheading.jpeg" alt="" height="90px">
                 
 
-            <div>
+            <div class="inner-navs" id="nav-links">
+
                 <nav>
                     <ul class="nav-div">
                         <li><a href="./index.html" class="nav-a">Home</a></li>
                         <li><a href="./about.html" class="nav-a">About Us</a> </li>
                         <li><a href="./cows.html" class="nav-a"> Our Cows</a></li>
-                        <li><a href="./products.html"  style="border-bottom: 5px solid green; padding-bottom: 5px; color: green; text-decoration: none;">Products</a> </li>
+                        <li style="width: fit-content; border-bottom: 5px solid green; padding-bottom: 5px; color: green;">Products</li>
                         <li><a href="./gallery.html" class="nav-a"> Gallery</a></li>
                         <li><a href="./contact.html" class="nav-a">Contact Us</a> </li>
                     </ul>
                 </nav>
+                
+
+                <div>
+                    <a class="contact-butn" href="./contact.html"> <span class="material-symbols-outlined">call</span> <p>Order Now</p></a>
+                </div>
+
             </div>
 
-            <div>
-                <a href="./contact.html" style=" text-decoration: none; border-radius: 10px; border: 2px solid black; color: white; background-color: green; display: flex; align-items: center;padding-left: 20px;padding-right: 20px; gap: 3px; font-family: Arial, Helvetica, sans-serif;"> <span class="material-symbols-outlined">call</span> <p>Order Now</p></a>
-            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </div>
     </header>
 
@@ -315,6 +320,12 @@
     </footer>
 
 
+    <script>
+        const toggleMenu = () => {
+            let nav  = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+        } 
+    </script>
 
 </body>
 </html>
