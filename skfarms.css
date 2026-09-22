@@ -585,6 +585,10 @@ footer{
     .index-h1{
         font-size: 40px;
     }
+
+    #explore-btn{
+        border: 1px solid white;
+    }
    
     .inner-back-img-buttons{
         gap: 20px;
